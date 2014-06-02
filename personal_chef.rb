@@ -5,7 +5,7 @@
 # create a personal chef class
 # make his name attribute accessible
 # make an initialize method that sets the name attribute.
-# make a method called make_toast that accepts a parameter (brown, light brown, burnt, burnt black, etc)
+# make a method called make_toast that accepts a parameter (brown, light brown, burnt, burntblack, etc)
 # make a method called make_juice that accepts a parameter (orange, apple, cranberry)
 # make a method called make_eggs (1,2,3, etc) and the style (overeasy, scrambled, sunnyside etc)
 #How do we run the code that we've written?
@@ -27,7 +27,7 @@ class Personalchef
 
   def make_toast(toastiness)
     if @hired == false
-      puts "\nYou fired me"
+      puts "\nI can't make you toast. You fired me"
     else
       puts "\n#{@chefsname}, please make my toast #{toastiness}."
     end
@@ -35,7 +35,7 @@ class Personalchef
 
   def make_juice (juice)
     if @hired == false
-      puts "um, remember you fired me"
+      puts "um, remember you fired me. No juice left."
     else
     puts "And #{@chefsname}, I'd like #{juice} for my juice please."
     end
@@ -43,7 +43,7 @@ class Personalchef
 
   def number_eggs (eggs)
     if @hired == false
-      puts "Again, you fired me"
+      puts "Again, you fired me man. cook ur own eggs."
     else
     puts "And oh #{@chefsname}, for eggs, #{eggs} please."
     end
